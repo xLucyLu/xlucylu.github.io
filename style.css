@@ -1,8 +1,0 @@
-h1 {
-  font-family: Alatsi, sans-serif;
-  color: var(--bs-body-bg);
-  text-align: center;
-  background: linear-gradient(black, var(--bs-blue) 7%, var(--bs-pink));
-  padding: 40px;
-}
-
