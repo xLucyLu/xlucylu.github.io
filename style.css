@@ -1,12 +1,80 @@
-nav{
-    background: rgb(183, 219, 168);
-}
-
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: large;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
-h1 {
-    color: black ;
+/* Colors */
+:root {
+  --main-bg-color: #fafafa;
+  --main-text-color: #333;
+  --accent-color: #f7c2d0; /* Cherry blossom pink */
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: var(--main-bg-color);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  margin: 2rem;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Blog */
+.blog {
+  margin: 2rem;
+}
+
+.blog h2 {
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.blog p {
+  margin-bottom: 2rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--main-bg-color);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: var(--main-text-color);
 }
